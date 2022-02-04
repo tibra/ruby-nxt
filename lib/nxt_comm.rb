@@ -16,9 +16,9 @@
 
 begin
   # Need to do a Kernel::require otherwise when included with rubygems, it fails
-  Kernel::require "serialport"
+  #Kernel::require "serialport"
   require "usb"
-  #require "serialport"
+  require "serialport"
 rescue LoadError
   puts
   puts "You must have the ruby-serialport and ruby-usb installed!"
